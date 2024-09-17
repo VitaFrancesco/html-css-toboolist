@@ -1,15 +1,16 @@
+/* reset rules */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
-    max-width: 1024px;
-    margin: 0 auto;
+ul,ol {
+	list-style: none;
 }
+/* project style */
 header{
     padding: 10px 15px;
-    background-color: white;
+    margin-bottom: 30px;
 }
 .logo{
     vertical-align: middle;
@@ -18,14 +19,13 @@ header{
     vertical-align: middle;
     font-size: 45px;
 }
-main{
-    padding-top: 30px;
-}
 body{
     background-color: rgb(236, 252, 254);
 }
-div.container{
-    background-color: white;
+/* corpo centrale */
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
     border-radius: 10px;
 }
 nav{
@@ -35,16 +35,106 @@ button{
     border-radius: 5px;
     padding: 5px;
 }
-/*  */
-.bg-blu{
+.primary-btn{
     background-color: rgb(0, 145, 255);
     color: white;
     border-color: rgb(0, 145, 255);
 }
-.color-grey{
+.second-btn{
     border-color: grey;
     color: grey;
 }
 section{
     padding: 40px 50px;
+}
+/* spaziature, lista annidata */
+.text{
+    line-height: 40px;
+    font-size: 20px;
+}
+.main-li{
+    margin-bottom: 30px;
+}
+h2::before{
+    content: ' \25BC';
+    font-size: 15px;
+    padding: 0 5px;
+}
+.tick::before{
+    content: ' \2713';
+    color: green;
+    border-radius: 100px;
+    border: solid 1px green;
+    margin: 10px 5px 10px 0;
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+.cross::before{
+    content: ' \2573';
+    color: red;
+    border-radius: 100px;
+    border: solid 1px red;
+    margin-right: 5px;
+    font-size: 15px;
+    padding: 5px 5px;
+    vertical-align: middle;
+}
+/* testo evidenziato per categoria */
+li.editorial::after{
+    content: "Editorial";
+    font-size: 15px;
+    background-color: rgb(0, 145, 255);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+li.q1-goals::after{
+    content: "Q1 Goals";
+    font-size: 15px;
+    background-color: rgb(115, 3, 175);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+li.recruiting::after{
+    content: "Recruiting";
+    font-size: 15px;
+    background-color: rgb(36, 190, 103);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+li.mobile::after{
+    content: "Mobile";
+    font-size: 15px;
+    background-color: rgb(239, 185, 34);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+li.website::after{
+    content: "Website";
+    font-size: 15px;
+    background-color: rgb(174, 73, 144);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+li.sales::after{
+    content: "Sales";
+    font-size: 15px;
+    background-color: rgb(98, 125, 41);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+/* utilities */
+.bg-white{
+    background-color: white;
 }
